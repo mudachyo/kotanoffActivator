@@ -1,5 +1,5 @@
-# Source: https://github.com/ImkotanoffARE/kotanoffActivator/
-# Made by kotanoffARE (https://kotanoff.ru/pages/contacts)
+# Source: https://github.com/mudachyo/kotanoffActivator/
+# Made by mudachyo (https://ktnff.tech/)
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -Name Window -Namespace Console -MemberDefinition '[DllImport("Kernel32.dll")]public static extern IntPtr GetConsoleWindow();[DllImport("user32.dll")]public static extern bool ShowWindow(IntPtr hWnd, Int32 nCmdShow);'
 [void][Console.Window]::ShowWindow([Console.Window]::GetConsoleWindow(), 0)
@@ -74,7 +74,7 @@ switch ($ver) {
             exit
         }
         New-Item -ItemType Directory -Path "$env:temp\kotanoffactivator"
-        Invoke-WebRequest -Uri "https://github.com/ImkotanoffARE/kotanoffActivator/raw/main/files/Office_2013_Library.zip" -OutFile $env:temp\kotanoffactivator\library.zip
+        Invoke-WebRequest -Uri "https://github.com/mudachyo/kotanoffActivator/raw/main/files/Office_2013_Library.zip" -OutFile $env:temp\kotanoffactivator\library.zip
         Expand-Archive -Path "$env:temp\kotanoffactivator\library.zip" -DestinationPath "$env:temp\kotanoffactivator\"  
         Set-Content $tmpFile -Value "@echo off
         title kotanoffActivator: $ver
