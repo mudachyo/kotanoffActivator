@@ -24,10 +24,6 @@
 ```pwsh
 powershell -command "iwr -useb https://raw.githubusercontent.com/mudachyo/kotanoffActivator/main/kotanoffActivator.ps1 | iex"
 ```
-Второй, сокращенный вариант команды (просто редирект на тот же GitHub с моего сайта)
-```pwsh
-powershell -command "iwr -useb https://malw.ru/dl/kotanoffActivator | iex"
-```
 Далее выберите приложение, которое вам нужно активировать из удобного интерфейса. И все!
 ![Скриншот активатора](https://github.com/mudachyo/kotanoffActivator/raw/main/files/screenshot.png?raw=true)
 ![Скриншот результата](https://github.com/mudachyo/kotanoffActivator/raw/main/files/result_screenshot.png?raw=true)
